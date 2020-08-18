@@ -3,7 +3,7 @@ import Form from "../Form";
 
 function Modal() {
   return (
-    <div className="d-flex flex-row mt-10 mb-10">
+    <div className="d-flex flex-row mb-4">
       <button
         type="button"
         class="btn btn-primary"
@@ -24,7 +24,7 @@ function Modal() {
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">
-                Modal title
+                Free Estimate
               </h5>
               <button
                 type="button"
@@ -37,18 +37,6 @@ function Modal() {
             </div>
             <div class="modal-body">
               <Form />
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
             </div>
           </div>
         </div>

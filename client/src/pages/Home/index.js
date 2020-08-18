@@ -11,7 +11,6 @@ function Home() {
         <div className="row justify-content-center">
           <Modal />
         </div>
-
         <HomeBodyCards />
       </div>
     </div>
