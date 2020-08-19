@@ -33,12 +33,14 @@ function AboutStaffContainer(props) {
       <div class="card-deck">
         {person.map((item) => {
           return (
-            <AboutStaffCard
-              image={item.image}
-              name={item.name}
-              title={item.title}
-              about={item.about}
-            />
+            <div className="row">
+              <AboutStaffCard
+                image={item.image}
+                name={item.name}
+                title={item.title}
+                about={item.about}
+              />
+            </div>
           );
         })}
       </div>

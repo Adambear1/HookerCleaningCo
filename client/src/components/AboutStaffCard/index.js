@@ -1,23 +1,23 @@
 import React, { useEffect } from "react";
 import "./styles.css";
+import { response } from "express";
 
 function AboutStaffCard(props) {
   return (
-    <>
-      <li class="media">
-        <img
-          class="mr-3 image"
-          src={props.image}
-          alt="Generic placeholder image"
-        />
-        <div class="media-body">
-          <h3 class="mt-0 mb-1">{props.name}</h3>
-          {"    "}
-          <h5>{props.title}</h5>
-          {props.about}
+    <div className="col-sm-12">
+      <li>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src={props.image} alt="Card image cap" />
+          <div className="card-header">
+            {props.name},{"  "}
+            {props.title}
+          </div>
+          <div class="card-body">
+            <p class="card-text">{props.about}</p>
+          </div>
         </div>
       </li>
-    </>
+    </div>
   );
 }
 
