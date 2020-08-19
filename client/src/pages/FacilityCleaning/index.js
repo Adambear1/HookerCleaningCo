@@ -6,11 +6,15 @@ function FacilityCleaning() {
   return (
     <>
       <div>
-        <h2 className="text-center my-4">Facilities</h2>
+        <h2 className="text-center my-4 animate__animated animate__fadeIn">
+          Facilities
+        </h2>
       </div>
       <FacilityContainer />
       <div>
-        <h2 className="text-center my-4">Services</h2>
+        <h2 className="text-center my-4 text-center my-4 animate__animated animate__fadeIn">
+          Services
+        </h2>
       </div>
       <ServicesContainer />
     </>

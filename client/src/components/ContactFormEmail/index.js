@@ -20,7 +20,7 @@ function ContactFormEmail() {
     <div class="row">
       {employee.map((item) => {
         return (
-          <div class="col-sm">
+          <div class="col-sm animate__animated animate__zoomInDown">
             <ContactFormEmailCard name={item.name} email={item.email} />
           </div>
         );

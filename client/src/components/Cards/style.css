@@ -1,0 +1,11 @@
+.home-images {
+  height: 300px !important;
+  width: auto;
+}
+
+@media (max-width: 600px) {
+  .home-images {
+    height: 200px !important;
+    width: auto;
+  }
+}

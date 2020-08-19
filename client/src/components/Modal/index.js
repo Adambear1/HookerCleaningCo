@@ -6,7 +6,7 @@ function Modal() {
     <div className="d-flex flex-row mb-4">
       <button
         type="button"
-        className="btn btn-primary"
+        className="btn btn-primary animate__animated animate__fadeIn"
         data-toggle="modal"
         data-target="#exampleModal"
       >

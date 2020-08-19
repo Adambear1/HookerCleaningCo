@@ -36,7 +36,7 @@ function ServicesContainer() {
   ];
   return (
     <div className="container">
-      <div className="card-group my-1 ">
+      <div className="card-group my-1 animate__animated animate__rollIn">
         {services.map((item) => {
           return (
             item.index <= 2 && (
@@ -49,7 +49,7 @@ function ServicesContainer() {
           );
         })}
       </div>
-      <div className="card-group my-2 ">
+      <div className="card-group my-2 animate__animated animate__rollIn animate__rotateIn">
         {services.map((item) => {
           return (
             item.index >= 3 && (

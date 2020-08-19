@@ -2,7 +2,7 @@ require("dotenv").config();
 const router = require("express").Router();
 const db = require("../models");
 
-const { email } = require("../utils/Nodemailer/email");
+const { inquire } = require("../utils/Nodemailer/inquire");
 
 router.post("/", ({ body }, res) => {
   db.Inquire.create({
@@ -18,7 +18,7 @@ router.post("/", ({ body }, res) => {
     .then((data) => {
       console.log(data);
       res.json(data);
-      // email(data);
+      // inquire(data);
     })
     .catch((err) => {
       res.status(500).json({ err: err.message });

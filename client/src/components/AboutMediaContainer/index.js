@@ -6,7 +6,7 @@ import History from "../History";
 
 function AboutMediaContainer() {
   return (
-    <div class="row">
+    <div class="row animate__animated animate__fadeIn">
       <div class="col-4">
         <div class="list-group" id="list-tab" role="tablist">
           <a

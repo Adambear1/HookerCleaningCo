@@ -48,7 +48,7 @@ function FacilityContainer() {
   ];
   return (
     <div className="container">
-      <div className="card-group my-2">
+      <div className="card-group my-2 mx-4 animate__animated animate__slideInDown">
         {facilities.map((item) => {
           return (
             item.index <= 3 && (
@@ -61,7 +61,7 @@ function FacilityContainer() {
           );
         })}
       </div>
-      <div className="card-group my-2">
+      <div className="card-group my-2 mx-4 animate__animated animate__slideInUp">
         {facilities.map((item) => {
           return (
             item.index >= 4 && (
