@@ -1,3 +1,10 @@
+li {
+  list-style-type: none;
+}
+.about-picture {
+  height: 600px !important;
+  width: auto !important;
+}
 .image {
   image-resolution: 300dpi;
   border-radius: 8px;
