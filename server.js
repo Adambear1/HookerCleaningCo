@@ -33,7 +33,7 @@ db().then((connection) => {
 });
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+  app.use(express.static("client/build/static"));
 }
 
 app.use("/api/inquire", require("./routes/inquire"));
