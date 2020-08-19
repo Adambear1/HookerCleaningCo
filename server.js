@@ -33,7 +33,7 @@ db().then((connection) => {
 });
 
 if (process.env.NODE_ENV === "production") {
-  app.use("/static", express.static(path.join(__dirname, "client/build")));
+  app.use("/static", express.static(path.join(__dirname, "./client/build")));
 }
 
 app.use("/api/inquire", require("./routes/inquire"));
