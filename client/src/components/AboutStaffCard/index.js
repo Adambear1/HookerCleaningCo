@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./styles.css";
-import { response } from "express";
 
 function AboutStaffCard(props) {
   return (
