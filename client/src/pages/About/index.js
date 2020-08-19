@@ -5,7 +5,9 @@ function About() {
   return (
     <div>
       <div className="container">
-        <AboutMediaContainer />
+        <div className="my-5">
+          <AboutMediaContainer />
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ require("dotenv").config();
 const router = require("express").Router();
 const db = require("../models");
 
-// const { email } = require("../utils/Nodemailer");
+const { email } = require("../utils/Nodemailer/email");
 
 router.post("/", ({ body }, res) => {
   db.Inquire.create({

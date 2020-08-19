@@ -1,0 +1,22 @@
+.nav-logo {
+  top: 0;
+  height: 70px;
+  width: auto;
+}
+
+.nav-callnow {
+  height: 30px !important;
+  top: 25px !important;
+  right: 25px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+}
+
+@media (max-width: 700px) {
+  .nav-callnow {
+    top: 0px !important;
+    position: relative;
+    left: 0px;
+  }
+}

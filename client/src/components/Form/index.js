@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import API from "../../utils/API";
 
 function Form() {
-  const [textState, updateTextState] = useState({});
+  const [textState, setTextState] = useState({});
   function onChange(e) {
-    updateTextState({ ...textState, [e.target.name]: e.target.value });
+    setTextState({ ...textState, [e.target.name]: e.target.value });
   }
   function handleSubmit(e) {
     e.preventDefault();
@@ -19,25 +19,25 @@ function Form() {
   console.log(textState);
   return (
     <form onSubmit={handleSubmit}>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="name">Name</label>
+      <div className="form-row">
+        <div className="form-group col-md-6">
+          <label htmlFor="name">Name</label>
           <input
             type="text"
             name="name"
-            class="form-control"
+            className="form-control"
             id="name"
             placeholder="First and Last Name"
             onChange={onChange}
             required
           />
         </div>
-        <div class="form-group col-md-6">
-          <label for="address">Address</label>
+        <div className="form-group col-md-6">
+          <label htmlFor="address">Address</label>
           <input
             name="address"
             type="text"
-            class="form-control"
+            className="form-control"
             id="address"
             placeholder="Address"
             onChange={onChange}
@@ -45,37 +45,37 @@ function Form() {
           />
         </div>
       </div>
-      <div class="form-group">
-        <label for="email">Email</label>
+      <div className="form-group">
+        <label htmlFor="email">Email</label>
         <input
           name="email"
           type="email"
-          class="form-control"
+          className="form-control"
           id="email"
           placeholder="Email"
           onChange={onChange}
           required
         />
       </div>
-      <div class="form-group">
-        <label for="phone">Phone Number</label>
+      <div className="form-group">
+        <label htmlFor="phone">Phone Number</label>
         <input
           name="phone"
           type="text"
-          class="form-control"
+          className="form-control"
           id="phone"
           placeholder="Phone Number"
           onChange={onChange}
           required
         />
       </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="squarefootage">Square Footage</label>
+      <div className="form-row">
+        <div className="form-group col-md-6">
+          <label htmlFor="squarefootage">Square Footage</label>
           <select
             id="squarefootage"
             name="squarefootage"
-            class="form-control"
+            className="form-control"
             onChange={onChange}
             required
           >
@@ -101,12 +101,12 @@ function Form() {
             <option value="2500+">2500+</option>
           </select>
         </div>
-        <div class="form-group col-md-6">
-          <label for="frequency">Frequency</label>
+        <div className="form-group col-md-6">
+          <label htmlFor="frequency">Frequency</label>
           <select
             id="frequency"
             name="frequency"
-            class="form-control"
+            className="form-control"
             onChange={onChange}
             required
           >
@@ -116,15 +116,16 @@ function Form() {
             <option value="Weekly">Weekly</option>
             <option value="WeekendsOnly">Weekends Only</option>
             <option value="Monthly">Monthly</option>
+            <option value="Annually">Annually</option>
             <option value="OnCall">On Call</option>
             <option value="Other(Specify)">Other (Specify)</option>
           </select>
         </div>
-        <div class="form-group col-md-12">
-          <label for="type">Type</label>
+        <div className="form-group col-md-12">
+          <label htmlFor="type">Type</label>
           <select
             id="type"
-            class="form-control"
+            className="form-control"
             name="type"
             onChange={onChange}
             required
@@ -147,10 +148,10 @@ function Form() {
           </select>
         </div>
       </div>
-      <div class="form-group">
-        <label for="additionalInformation">Additional Information</label>
+      <div className="form-group">
+        <label htmlFor="additionalInformation">Additional Information</label>
         <textarea
-          class="form-control"
+          className="form-control"
           id="additionalInformation"
           name="additionalInformation"
           rows="3"
@@ -158,8 +159,12 @@ function Form() {
           required
         ></textarea>
       </div>
-      <div class="modal-footer justify-content-md-center ">
-        <button type="submit" class="btn btn-primary" onClick={handleSubmit}>
+      <div className="modal-footer justify-content-md-center ">
+        <button
+          type="submit"
+          className="btn btn-primary"
+          onClick={handleSubmit}
+        >
           Submit
         </button>
       </div>

@@ -1,12 +1,18 @@
 import React from "react";
-
+import "./styles.css";
+import logo from "./images/logo.webp";
+import callnow from "./images/callnow.jpg";
 function Navbar() {
   return (
     <div>
       {" "}
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="/">
-          Hooker Cleaning Co
+          <img
+            src={logo}
+            className="nav-logo"
+            title="The Hooker Cleaning Company"
+          />
         </a>
         <button
           className="navbar-toggler"
@@ -27,23 +33,27 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
+              <a className="nav-link" href="/facilityandservices">
+                Facility and Services
+              </a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link" href="/about">
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/facilitycleaning">
-                Facility Cleaning
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/services">
-                Services
-              </a>
-            </li>
-            <li className="nav-item">
               <a className="nav-link" href="/contact">
                 Contact
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                title="1(206)-423-2180"
+                href="tel:12064232180"
+              >
+                <img src={callnow} className="nav-callnow" />
               </a>
             </li>
           </ul>

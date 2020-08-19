@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import FacilityCleaning from "./pages/FacilityCleaning";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 import "./App.css";
 import Footer from "./components/Footer";
 
@@ -15,7 +17,13 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/facilitycleaning" component={FacilityCleaning} />
+          <Route
+            exact
+            path="/facilityandservices"
+            component={FacilityCleaning}
+          />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="*" component={NotFound} />
         </Switch>
         <Footer />
       </Router>
