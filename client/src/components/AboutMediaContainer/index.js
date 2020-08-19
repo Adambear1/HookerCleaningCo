@@ -1,8 +1,8 @@
 import React from "react";
 import MissionStatement from "../MissionStatement";
 import AboutTestimonials from "../AboutTestimonials";
-import AboutUs from "../AboutUs";
 import AboutStaffContainer from "../AboutStaffContainer";
+import History from "../History";
 
 function AboutMediaContainer() {
   return (
@@ -84,7 +84,7 @@ function AboutMediaContainer() {
             role="tabpanel"
             aria-labelledby="list-settings-list"
           >
-            ...
+            <History />
           </div>
         </div>
       </div>

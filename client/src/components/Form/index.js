@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import axios from "axios";
+import API from "../../utils/API";
 
 function Form() {
   const [textState, updateTextState] = useState({});
   function onChange(e) {
     updateTextState({ ...textState, [e.target.name]: e.target.value });
   }
-  function onSubmit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
-    axios
-      .post("/api/inquire", textState)
+    API.postInquire(textState)
       .then((data) => {
         console.log(data);
       })
@@ -19,7 +18,7 @@ function Form() {
   }
   console.log(textState);
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="name">Name</label>
@@ -160,7 +159,7 @@ function Form() {
         ></textarea>
       </div>
       <div class="modal-footer justify-content-md-center ">
-        <button type="submit" class="btn btn-primary" onSubmit={onSubmit}>
+        <button type="submit" class="btn btn-primary" onClick={handleSubmit}>
           Submit
         </button>
       </div>
