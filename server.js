@@ -40,7 +40,7 @@ app.use("/api/inquire", require("./routes/inquire"));
 app.use("/api/sendEmail", require("./routes/email"));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/public/index.html"));
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
 app.listen(PORT, () => {
