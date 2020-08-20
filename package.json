@@ -2,7 +2,6 @@
   "name": "HookerCleaningCo",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://adam-hooker-cleaning-company.herokuapp.com/",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.19.0",
