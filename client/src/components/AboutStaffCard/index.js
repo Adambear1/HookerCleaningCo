@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./styles.css";
 
 function AboutStaffCard(props) {
   return (
-    <div className="col-sm-8 mb-5  ">
+    <div className="col-sm-12 col-m-8 mb-5  ">
       <li className="align-items-center">
         <div className="card" styles="width: 18rem;">
           <img

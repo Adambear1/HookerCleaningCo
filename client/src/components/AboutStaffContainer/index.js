@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import AboutStaffCard from "../AboutStaffCard";
 import johnPic from "./john.webp";
 import sammiePic from "./sammie.webp";
 import rodikaPic from "./rodika.webp";
 
-function AboutStaffContainer(props) {
+function AboutStaffContainer() {
   let person = [
     {
       name: "John Hooker",
