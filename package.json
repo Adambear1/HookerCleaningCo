@@ -2,6 +2,7 @@
   "name": "HookerCleaningCo",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/Adambear1/HookerCleaningCo#readme",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -40,6 +41,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Adambear1/HookerCleaningCo/issues"
-  },
-  "homepage": "https://github.com/Adambear1/HookerCleaningCo#readme"
+  }
 }
