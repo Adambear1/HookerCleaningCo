@@ -31,18 +31,18 @@ function AboutStaffContainer() {
   return (
     <div>
       <div class="card-deck">
-        {person.map((item) => {
-          return (
-            <div className="row">
+        <div className="row">
+          {person.map((item) => {
+            return (
               <AboutStaffCard
                 image={item.image}
                 name={item.name}
                 title={item.title}
                 about={item.about}
               />
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );

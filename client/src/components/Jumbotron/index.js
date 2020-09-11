@@ -1,4 +1,6 @@
 import React from "react";
+import backgroundImage from "./images/background.jpg";
+import "./style.css";
 
 function Jumbotron() {
   return (

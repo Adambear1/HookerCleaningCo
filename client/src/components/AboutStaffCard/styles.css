@@ -38,28 +38,6 @@ li {
   border-radius: 8px;
 }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  bottom: 1%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.text-link {
-  padding: 0;
-  border: none;
-  background: none;
-  color: white;
-  font-size: 12px;
-  bottom: 0% !important;
-  left: 50% !important;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+.employee-card {
+  height: 500px !important;
 }

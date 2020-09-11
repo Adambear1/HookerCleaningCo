@@ -10,7 +10,7 @@ const cookieParser = require("cookie-parser");
 const expressSession = require("express-session");
 const MongoStore = require("connect-mongo")(expressSession);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 app.use(helmet());
