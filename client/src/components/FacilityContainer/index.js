@@ -1,47 +1,55 @@
 import React from "react";
 import "./styles.css";
 import FacilityCards from "../FacilityCards";
-import office from "./images/clean1.jpg";
+
+import clean2 from "./images/clean2.jpg";
+import clean3 from "./images/clean3.jpg";
+import clean4 from "./images/clean4.jpg";
+import clean5 from "./images/clean5.jpg";
+import clean6 from "./images/clean6.jpg";
+import clean7 from "./images/clean7.jpg";
+import clean8 from "./images/clean8.jpg";
+import clean9 from "./images/clean9.jpg";
 
 function FacilityContainer() {
   let facilities = [
     {
-      image: office,
+      image: clean9,
       text: "Auto Dealer Cleaning",
       index: 0,
     },
     {
-      image: office,
+      image: clean2,
       text: "Building Maintenance",
       index: 1,
     },
     {
-      image: office,
+      image: clean3,
       text: "Residential Cleaning",
       index: 2,
     },
     {
-      image: office,
-      text: "Medical Office Cleaning",
+      image: clean4,
+      text: "Medical clean Cleaning",
       index: 3,
     },
     {
-      image: office,
-      text: "Office Cleaning",
+      image: clean5,
+      text: "clean Cleaning",
       index: 4,
     },
     {
-      image: office,
+      image: clean6,
       text: "Post Construction Cleaning",
       index: 5,
     },
     {
-      image: office,
+      image: clean7,
       text: "School & University Cleaning",
       index: 6,
     },
     {
-      image: office,
+      image: clean8,
       text: "Other",
       index: 7,
     },
