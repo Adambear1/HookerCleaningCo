@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import FacilityCleaning from "./pages/FacilityCleaning";
 import Contact from "./pages/Contact";
+import Careers from "./pages/Careers";
 import NotFound from "./pages/NotFound";
 import "./App.css";
 import Footer from "./components/Footer";
@@ -22,6 +23,7 @@ function App() {
             path="/facilityandservices"
             component={FacilityCleaning}
           />
+          <Route exact path="/careers" component={Careers} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="*" component={NotFound} />
         </Switch>
