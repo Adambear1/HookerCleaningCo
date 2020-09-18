@@ -3,7 +3,7 @@ import "./styles.css";
 
 function AboutStaffCard(props) {
   return (
-    <div className="col-sm-6 col-m-8 mb-5">
+    <div className="col-sm-12 col-md-6 col-lg-4 mb-5">
       <li className="align-items-center">
         <div className="card" styles="width: 18rem;">
           <img

@@ -6,4 +6,7 @@ export default {
   sendEmail: (data) => {
     return axios.post("/api/sendEmail", data);
   },
+  careers: (data) => {
+    return axios.post("/api/careers", data);
+  },
 };

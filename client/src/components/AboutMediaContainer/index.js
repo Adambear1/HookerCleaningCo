@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 import MissionStatement from "../MissionStatement";
 import AboutTestimonials from "../AboutTestimonials";
 import AboutStaffContainer from "../AboutStaffContainer";
@@ -6,21 +7,21 @@ import History from "../History";
 
 function AboutMediaContainer() {
   return (
-    <div class="row animate__animated animate__fadeIn">
-      <div class="col-4">
-        <div class="list-group" id="list-tab" role="tablist">
+    <div className="text-wrap row animate__animated animate__fadeIn">
+      <div className="text-wrap col-4">
+        <div className="text-wrap list-group" id="list-tab" role="tablist">
           <a
-            class="list-group-item list-group-item-action active"
+            className="text-wrap list-group-item list-group-item-action active text-wrap"
             id="missionStatement"
             data-toggle="list"
             href="#list-home"
             role="tab"
             aria-controls="home"
           >
-            Mission and Values
+            Mission, Values, & Philosophy
           </a>
           <a
-            class="list-group-item list-group-item-action"
+            className="list-group-item list-group-item-action text-wrap"
             id="list-profile-list"
             data-toggle="list"
             href="#list-profile"
@@ -30,7 +31,7 @@ function AboutMediaContainer() {
             Our Staff
           </a>
           <a
-            class="list-group-item list-group-item-action"
+            className="list-group-item list-group-item-action text-wrap testimonials-tab"
             id="list-messages-list"
             data-toggle="list"
             href="#list-messages"
@@ -40,7 +41,7 @@ function AboutMediaContainer() {
             Testimonials
           </a>
           <a
-            class="list-group-item list-group-item-action"
+            className="list-group-item list-group-item-action text-wrap"
             id="list-settings-list"
             data-toggle="list"
             href="#list-settings"
@@ -51,10 +52,10 @@ function AboutMediaContainer() {
           </a>
         </div>
       </div>
-      <div class="col-8">
-        <div class="tab-content" id="nav-tabContent">
+      <div className="col-8">
+        <div className="tab-content" id="nav-tabContent">
           <div
-            class="tab-pane fade show active"
+            className="tab-pane fade show active"
             id="list-home"
             role="tabpanel"
             aria-labelledby="missionStatement"
@@ -63,7 +64,7 @@ function AboutMediaContainer() {
           </div>
 
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="list-profile"
             role="tabpanel"
             aria-labelledby="list-profile-list"
@@ -71,7 +72,7 @@ function AboutMediaContainer() {
             <AboutStaffContainer />
           </div>
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="list-messages"
             role="tabpanel"
             aria-labelledby="list-messages-list"
@@ -79,7 +80,7 @@ function AboutMediaContainer() {
             <AboutTestimonials />
           </div>
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="list-settings"
             role="tabpanel"
             aria-labelledby="list-settings-list"

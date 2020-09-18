@@ -2,11 +2,11 @@ li {
   list-style-type: none;
 }
 .about-picture {
-  height: 600px !important;
+  height: 300px !important;
   width: auto !important;
 }
 .image {
-  image-resolution: 300dpi;
+  image-resolution: 500dpi;
   border-radius: 8px;
   object-position: center;
 }

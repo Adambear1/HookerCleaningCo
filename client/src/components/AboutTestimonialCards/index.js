@@ -2,14 +2,15 @@ import React from "react";
 
 function AboutTestimonialCards(props) {
   return (
-    <li className="media">
-      <div className="card">
-        <b>
-          <h3 className="text-justify">{props.company}</h3>
-        </b>
-        <div className="card-body">{props.testimonial}</div>
+    <div>
+      <div class="card bg-light mb-3" styles="max-width: 18rem;">
+        <div class="card-header">{props.company}</div>
+        <div class="card-body">
+          <h5 class="card-title">{props.testimonial}</h5>
+          <p class="card-text"></p>
+        </div>
       </div>
-    </li>
+    </div>
   );
 }
 
