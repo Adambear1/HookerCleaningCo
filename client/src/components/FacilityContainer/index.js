@@ -25,7 +25,7 @@ function FacilityContainer() {
     },
     {
       image: clean3,
-      text: "Residential Cleaning",
+      text: "Government Office Cleaning",
       index: 2,
     },
     {
@@ -35,7 +35,7 @@ function FacilityContainer() {
     },
     {
       image: clean5,
-      text: "clean Cleaning",
+      text: "Warehouse Cleaning",
       index: 4,
     },
     {

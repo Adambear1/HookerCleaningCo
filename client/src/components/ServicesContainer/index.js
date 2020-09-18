@@ -37,30 +37,19 @@ function ServicesContainer() {
   return (
     <div className="container">
       <div className="card-group my-1 animate__animated animate__rollIn">
-        {services.map((item) => {
-          return (
-            item.index <= 2 && (
-              <FacilityCards
-                className="mx-4"
-                image={item.image}
-                text={item.text}
-              />
-            )
-          );
-        })}
-      </div>
-      <div className="card-group my-2 animate__animated animate__rollIn animate__rotateIn">
-        {services.map((item) => {
-          return (
-            item.index >= 3 && (
-              <FacilityCards
-                className="mx-4"
-                image={item.image}
-                text={item.text}
-              />
-            )
-          );
-        })}
+        <div>
+          <div class="card bg-light mb-3" styles="max-width: 18rem;">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">
+                The Hooker Cleaning Company is dynamic in services: On Call,
+                Daily, Weekly, Monthly, One-Time. We take immense pride in
+                having flexible hours that cater best to our customers.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
